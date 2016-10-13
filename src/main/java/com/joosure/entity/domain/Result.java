@@ -19,6 +19,18 @@ public class Result implements Serializable {
 	protected Integer errCode;
 	protected String errMsg;
 
+	public Result() {
+	}
+
+	public Result(Integer errCode) {
+		this.errCode = errCode;
+	}
+
+	public Result(Integer errCode, String errMsg) {
+		this.errCode = errCode;
+		this.errMsg = errMsg;
+	}
+
 	public Integer getErrCode() {
 		return errCode;
 	}
